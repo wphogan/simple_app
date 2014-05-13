@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'ccsf_rails/index'
+
+  get 'ccsf_rails/links'
+
+  get 'ccsf_rails/about'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
