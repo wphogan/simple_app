@@ -1,21 +1,47 @@
 $background-color: #fafafa;
 $sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif: Baskerville,Georgia, "Times New Roman", serif;
-$text-color: #222222;
-$link-color: #0000aa;
+$helvetica:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+$text-color: #000000;
+$link-color: #000000;
 
-body { background-color: $background-color;color:$text-color}
+$default-text-shadow-color: rgba(red, 0.6);
+$default-text-shadow-blur: 3px;
+$default-text-shadow-v-offset: 1px;
+$header-img: image-url('http://images.fineartamerica.com/images-medium-large-5/washington-dc-skyline-michael-tompsett.jpg');
+
+
+
+body { background-color: $background-color;color:$text-color; background-image: $header-img}
+
+.menu {
+	ul {
+		list-style-type:none;
+		margin:0;
+		padding:0;
+		font-family:$helvetica;
+  		width:41em;
+  		margin: 0px 0px 0px 70px;
+  		text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
+	}
+	li {
+		display:inline;
+	}
+}
 .welcome {
-  font-family:$serif;
+  font-family:$helvetica;
   width:41em;
-  margin: 50px auto;
+  margin: 0px 0px 0px 70px;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
   p {
-    background-color:#444;
-    color: #eee;
+    color: #000000;
     li {
       a {
         color: darken($link-color, 20%);
         font-family:$sans-serif;
+
+
+
       }
     }
   }

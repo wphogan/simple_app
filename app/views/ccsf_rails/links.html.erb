@@ -1,2 +1,16 @@
-<h1>CcsfRails#links</h1>
-<p>Find me in app/views/ccsf_rails/links.html.erb</p>
+<div class="menu">
+	<ul>
+		<li><%= link_to 'Home', ccsf_rails_index_path(@index) %></li> |
+		<li><%= link_to 'About', ccsf_rails_about_path(@about) %></li> |
+		<li><%= link_to 'Links', ccsf_rails_links_path(@links) %></li>
+	</ul>
+</div>
+
+<div class="welcome"><h1>Links</h1>
+	<p>Why would you want to go anywhere else?</p>
+</div>
+
+<div id="footer">
+		<%= link_to 'Home', ccsf_rails_index_path(@index) %> | <%= link_to 'About', ccsf_rails_about_path(@about) %> | <%= link_to 'Links', ccsf_rails_links_path(@links) %>
+</div>
+

@@ -1,2 +1,18 @@
-<h1>CcsfRails#about</h1>
-<p>Find me in app/views/ccsf_rails/about.html.erb</p>
+<div class="menu">
+	<ul>
+		<li><%= link_to 'Home', ccsf_rails_index_path(@index) %></li> |
+		<li><%= link_to 'About', ccsf_rails_about_path(@about) %></li> |
+		<li><%= link_to 'Links', ccsf_rails_links_path(@links) %></li>
+	</ul>
+</div>
+
+<div class="welcome">
+	<h1>About</h1>
+	<p>This is a test website. I'm practicing Ruby code.</p>
+</div>
+
+<div id="footer">
+
+		<%= link_to 'Home', ccsf_rails_index_path(@index) %> | <%= link_to 'About', ccsf_rails_about_path(@about) %> | <%= link_to 'Links', ccsf_rails_links_path(@links) %>
+
+</div>
